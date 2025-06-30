@@ -1,8 +1,8 @@
 
 import React, { useState, useEffect } from "react";
-import CrossIcon from "../assets/CombinedShapeCopy.png";
-import CircleIcon from "../assets/Oval Copy.png";
-import CrossIcongrey from "../assets/Combined Shape Copy 2.png";
+// import CrossIcon from "../assets/CombinedShapeCopy.png";
+// import CircleIcon from "../assets/Oval Copy.png";
+// import CrossIcongrey from "../assets/Combined Shape Copy 2.png";
 import { GrPowerReset } from "react-icons/gr";
 import GameTieModal from "../component/GameTieModal";
 import ResetGameModal from "../component/ResetGameModal";
@@ -145,12 +145,12 @@ const GameVsCpu = ({
             {/* Header */}
             <div className="w-full flex items-center justify-between gap-1 px-12">
                 <div className="flex">
-                    <img src={CrossIcon} alt="Cross Icon" className="w-6 h-6" />
-                    <img src={CircleIcon} alt="Circle Icon" className="w-6 h-6" />
+                    <img src='/assets/CombinedShapeCopy.png' alt="Cross Icon" className="w-6 h-6" />
+                    <img src='/assets/Oval Copy.png' alt="Circle Icon" className="w-6 h-6" />
                 </div>
                 <button className="border-none bg-[#1f3641] flex items-center gap-2 cursor-pointer shadow-[0_5px_0_rgba(0,0,0,0.25)] rounded-[10px] w-30 h-10 px-3.5">
-                    {playerTurn === "X" && <img src={CrossIcongrey} alt="X" className="w-4 h-4" />}
-                    {playerTurn === "O" && <img src={CircleIcon} alt="O" className="w-4 h-4" />}
+                    {playerTurn === "X" && <img src='/assets/Combined Shape Copy 2.png' alt="X" className="w-4 h-4" />}
+                    {playerTurn === "O" && <img src='/assets/Oval Copy.png' alt="O" className="w-4 h-4" />}
                     <h2 className="text-[#a8bfc9] text-[1rem] font-bold">
                         {isCpuThinking ? "CPU THINKING..." : "TURN"}
                     </h2>
@@ -174,8 +174,8 @@ const GameVsCpu = ({
                         className="bg-gray-700 h-18 rounded-lg w-20 shadow-[0_5px_0_rgba(0,0,0,0.25)] flex items-center justify-center"
                         disabled={isCpuThinking}
                     >
-                        {val === "X" && <img src={CrossIcon} alt="X" className="w-4 h-4" />}
-                        {val === "O" && <img src={CircleIcon} alt="O" className="w-4 h-4" />}
+                        {val === "X" && <img src='/assets/CombinedShapeCopy.png' alt="X" className="w-4 h-4" />}
+                        {val === "O" && <img src='/assets/Oval Copy.png' alt="O" className="w-4 h-4" />}
                     </button>
                 ))}
             </div>

@@ -1,6 +1,6 @@
 import React from "react";
-import Cross from "../assets/CombinedShapeCopy.png";
-import CircleIcon from "../assets/Oval Copy.png";
+// import Cross from "../assets/CombinedShapeCopy.png";
+// import CircleIcon from "../assets/Oval Copy.png";
 import { Link } from "react-router-dom";
 
 const GameTieModal = ({handleNextRound, playerTurn}) => {
@@ -12,10 +12,10 @@ const GameTieModal = ({handleNextRound, playerTurn}) => {
 
         <div className="flex items-center justify-center text-4xl font-bold gap-2">
           {
-            playerTurn == 'X' && <img src={Cross} alt="Cross" />
+            playerTurn == 'X' && <img src='/assets/CombinedShapeCopy.png' alt="Cross" />
           }
           {
-            playerTurn == 'O' && <img src={CircleIcon} alt="Circle Icon" className="w-4 h-4" />
+            playerTurn == 'O' && <img src='/assets/Oval Copy.png' alt="Circle Icon" className="w-4 h-4" />
           }
         
           <span className="text-cyan-300 text-2xl uppercase">

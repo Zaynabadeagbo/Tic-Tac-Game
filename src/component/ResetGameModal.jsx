@@ -1,7 +1,3 @@
-import React from "react";
-import Cross from "../assets/CombinedShapeCopy.png";
-import { Link } from "react-router-dom";
-
 const ResetGameModal = ({handleResetGame, handleYesReset}) => {
   return (
     <div className="fixed w-full">
@@ -9,10 +5,7 @@ const ResetGameModal = ({handleResetGame, handleYesReset}) => {
         <p className="text-2xl text-white font-bold py-6">Reset Game?</p>
 
         <div className="flex items-center justify-center text-4xl font-bold gap-2">
-          {/* <img src={Cross} alt="Cross" />
-          <span className="text-cyan-300 text-2xl uppercase">
-            takes the round
-          </span> */}
+  
         </div>
 
         <div className="flex gap-4 justify-center py-6">
